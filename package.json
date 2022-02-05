@@ -1,7 +1,7 @@
 {
   "name": "hi_mate",
   "version": "1.0.0",
-  "description": "Simple Wab app to help players to meet and play together",
+  "description": "Simple Web app to help players to meet and play together",
   "main": "Back-end/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
