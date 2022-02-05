@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
+const userController = require('./Controller/UserController');
 
 //Mongoose initialisation
 mongoose.connect('mongodb+srv://mohamed:414498200@silver-cluster.yegdt.mongodb.net/HiMate?retryWrites=true&w=majority')
@@ -27,7 +28,7 @@ app.use((req, res, next) => {
 });
 
 // gestion des controllers
-
+app.use('/users',userController);
 
 //export
 module.exports = app;
